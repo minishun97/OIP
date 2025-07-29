@@ -1,0 +1,19 @@
+/* base.css */
+
+/* Base Colors */
+:root {
+    --primary-color: #008B8A;    /* Deep Teal */
+    --secondary-color: #A04E00;  /* Warm Brown */
+    --accent-color: #FFD4B1;     /* Soft Peachy Pink */
+    --light-bg-color: #D2EDE8;   /* Light Minty Teal */
+    --white-color: #FCFFFF;      /* Very Light White */
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-bg-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
