@@ -2,7 +2,7 @@ import Introduction from '../../components/Introduction';
 
 const AboutUs = () => (
     <>
-        <Introduction />
+        {/* Add in a Segment here. E.g. '<StakeholderLessons />' */}
     </>
 );
 

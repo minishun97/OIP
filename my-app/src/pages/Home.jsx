@@ -17,8 +17,6 @@ const Home = () => (
         <HighFiPrototype />
         <Advantages />
         <Timeline />
-        <CTASection />
-        <Footer />
     </>
 );
 
