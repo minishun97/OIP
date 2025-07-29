@@ -23,15 +23,62 @@ const Timeline = () => (
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        date="Day 2"
+        date="Day 1"
         iconStyle={{ background: '#009688', color: '#fff' }}
         icon={<FaUserFriends />}
       >
         <h3>Customer Need Finding</h3>
-        <p>
-          Conducted in-depth need exploration interviews with the client to uncover
-          unmet needs and motivations.
-        </p>
+
+          <p style={{ marginBottom: '12px' }}>
+            Used a <strong>Double Diamond</strong> approach to ensure that our questions were 
+            user-centered and empathetic, reducing bias during interviews.
+          </p>
+
+          <h4 style={{ fontWeight: '600', marginTop: '12px', marginBottom: '4px' }}>Meeting Minutes Highlights</h4>
+
+          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Current Workflow & Challenges</h5>
+          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
+            <li>All processes are manual: individual calendar invites and no central volunteer contact list.</li>
+            <li>Communication is strictly 1-to-1.</li>
+            <li>Volunteers assist with events (e.g., litter picking, 4–5 hours, H&S training required).</li>
+          </ul>
+
+          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Ideas & Considerations</h5>
+          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
+            <li>Explore existing platforms (scheduling systems, login portals, websites, social media).</li>
+            <li>Calendar integration is essential.</li>
+          </ul>
+
+          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Feature Needs Identified</h5>
+          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
+            <li>Track time changes, requirements, notes, accessibility, training, availability, and hours volunteered.</li>
+            <li>Manage expenses, budgets, and leftover funds.</li>
+            <li>Flag/report no-shows; track event staffing requirements.</li>
+            <li>Reward/achievement system: milestones, certificates, incentives.</li>
+          </ul>
+
+          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Volunteer Considerations</h5>
+          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
+            <li>Ensure accessibility and support for offline access for volunteers without constant digital connectivity.</li>
+          </ul>
+
+          <h4 style={{ fontWeight: '600', marginTop: '12px', marginBottom: '4px' }}>Two Surprising Insights</h4>
+          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
+            <li>Heavy lack of workload automation.</li>
+            <li>All communication is 1-to-1, no central platform for volunteers and workers.</li>
+          </ul>
+
+          <h4 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Highlighted Need For</h4>
+          <ul style={{ paddingLeft: '20px' }}>
+            <li>Centralized system with calendar integration.</li>
+            <li>Support for managing training and attendance.</li>
+            <li>
+              Consideration of accessibility and offline access for users 
+              without digital means all the time.
+            </li>
+          </ul>
+
+
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
