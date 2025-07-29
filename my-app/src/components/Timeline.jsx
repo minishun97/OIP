@@ -15,11 +15,96 @@ const Timeline = () => (
         iconStyle={{ background: '#3f51b5', color: '#fff' }}
         icon={<FaLightbulb />}
       >
-        <h3>Kickoff & Questionnaires</h3>
-        <p>
-          Designed questionnaires with mental models in mind, surveyed teammates
-          to clarify different perspectives on project scope.
-        </p>
+        <h3>Day 1 – Kickoff & Questionnaires</h3>
+          <p style={{ marginBottom: '12px' }}>
+            On Day 1, we explored team perspectives and designed a questionnaire to
+            better understand user needs, focusing on communication, scheduling,
+            and accessibility.
+          </p>
+
+          <div style={{ marginTop: '16px', background: '#f9f9f9', padding: '16px', borderRadius: '8px' }}>
+            <h4 style={{ fontWeight: '600', marginBottom: '12px' }}>Volunteer Management Questionnaire</h4>
+            
+            <form className="space-y-4">
+              {/* Question 1 */}
+              <div>
+                <label className="block font-semibold mb-1">
+                  1. How much of your current volunteer coordination is done manually?
+                </label>
+                <select className="border p-2 rounded w-full">
+                  <option>All manual (no tools)</option>
+                  <option>Mostly manual with some tools</option>
+                  <option>Balanced mix of tools and manual work</option>
+                  <option>Mostly automated with tools</option>
+                </select>
+              </div>
+
+              {/* Question 2 */}
+              <div>
+                <label className="block font-semibold mb-1">
+                  2. What communication methods do you currently use? (Select all that apply)
+                </label>
+                <div>
+                  <label className="block"><input type="checkbox" /> Email</label>
+                  <label className="block"><input type="checkbox" /> Messaging apps</label>
+                  <label className="block"><input type="checkbox" /> Phone calls</label>
+                  <label className="block"><input type="checkbox" /> Social media groups</label>
+                  <label className="block"><input type="checkbox" /> Other</label>
+                </div>
+              </div>
+
+              {/* Question 3 */}
+              <div>
+                <label className="block font-semibold mb-1">
+                  3. Would a centralized calendar system improve coordination?
+                </label>
+                <div>
+                  <label className="block"><input type="radio" name="calendar" /> Yes</label>
+                  <label className="block"><input type="radio" name="calendar" /> Maybe</label>
+                  <label className="block"><input type="radio" name="calendar" /> No</label>
+                </div>
+              </div>
+
+              {/* Question 4 */}
+              <div>
+                <label className="block font-semibold mb-1">
+                  4. Which features would be most valuable? (Select all that apply)
+                </label>
+                <div>
+                  <label className="block"><input type="checkbox" /> Event sign-up and reminders</label>
+                  <label className="block"><input type="checkbox" /> Volunteer database & profiles</label>
+                  <label className="block"><input type="checkbox" /> Attendance tracking</label>
+                  <label className="block"><input type="checkbox" /> Training and certification records</label>
+                  <label className="block"><input type="checkbox" /> Reporting no-shows</label>
+                  <label className="block"><input type="checkbox" /> Reward/achievement system</label>
+                </div>
+              </div>
+
+              {/* Question 5 */}
+              <div>
+                <label className="block font-semibold mb-1">
+                  5. How important is offline access for volunteers without constant internet?
+                </label>
+                <div>
+                  <label className="block"><input type="radio" name="offline" /> Very important</label>
+                  <label className="block"><input type="radio" name="offline" /> Somewhat important</label>
+                  <label className="block"><input type="radio" name="offline" /> Not important</label>
+                </div>
+              </div>
+
+              {/* Additional comments */}
+              <div>
+                <label className="block font-semibold mb-1">
+                  6. Additional comments or requirements:
+                </label>
+                <textarea
+                  className="border p-2 rounded w-full"
+                  placeholder="Your comments..."
+                />
+              </div>
+            </form>
+          </div>
+
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
