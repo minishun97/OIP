@@ -17,3 +17,98 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Animated Background */
+.animated-bg {
+  background: linear-gradient(-45deg, #004d40, #009688, #00796b, #004d40);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* For Flipcards */
+.flip-card {
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.flip-card:hover {
+  transform: scale(1.05);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  height: 150px;
+  backface-visibility: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Animated gradient for front */
+.flip-card-front {
+  z-index: 2;
+  background: linear-gradient(-45deg, #80deea, #4db6ac, #26a69a, #80cbc4);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Back is simple white */
+.flip-card-back {
+  background-color: #ffffff;
+  color: #333;
+  transform: rotateY(180deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.flip-card-back::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+  transform: scale(1.05); /* Prevents blur edge clipping */
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.flip-card-back p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

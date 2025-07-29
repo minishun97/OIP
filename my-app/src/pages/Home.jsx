@@ -5,8 +5,8 @@ import FeedbackSection from '../components/FeedbackSection';
 import HighFiPrototype from '../components/HighFiPrototype';
 import Advantages from '../components/Advantages';
 import Timeline from '../components/Timeline';
-import CTASection from '../components/CTASection';
-import Footer from '../components/Footer';
+import Particles from "react-tsparticles";
+
 
 const Home = () => (
     <>
