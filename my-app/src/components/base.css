@@ -239,6 +239,19 @@ body {
   font-weight: bold;
 }
 
+.card-content {
+  padding-left: 20px; /* Or whatever fixed left indent you want */
+  padding-right: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 8px; /* Add spacing between header and description */
+}
+
+.card-content p {
+  margin: 0; /* Ensure paragraphs don't add unwanted spacing */
+}
+
 /* Prototype Page Styling */
 
 /* Section Titles */

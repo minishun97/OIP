@@ -39,8 +39,10 @@ const Timeline = () => (
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="timeline-flipcard-front">
-                <h4>Meeting Minutes Highlights</h4>
-                <p style={{ marginLeft: '10px' }}>Overview of current workflow, challenges, and brainstormed ideas.</p>
+                <div className="card-content">
+                  <h3>Meeting Minutes Highlights</h3>
+                  <p>Overview of current workflow, challenges, and suggested solution.</p>
+                </div>  
               </div>
               <div className="flip-card-back">
                 <div>
@@ -76,8 +78,10 @@ const Timeline = () => (
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="timeline-flipcard-front">
-                <h4>Two Surprising Insights</h4>
-                <p>Unexpected issues uncovered during user interviews.</p>
+                <div className="card-content">
+                  <h4>Insights Discovered</h4>
+                  <p>Unexpected issues uncovered during business partner interview.</p>
+                </div>
               </div>
               <div className="flip-card-back">
                 <ul>
@@ -92,14 +96,16 @@ const Timeline = () => (
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="timeline-flipcard-front">
-                <h4>Highlighted Need For</h4>
-                <p>Identified core requirements to enhance operations.</p>
+                <div className="card-content">
+                  <h4>User Needs</h4>
+                  <p>Identified requirements to meet user pain points and enhance overall experience.</p>
+                </div>
               </div>
               <div className="flip-card-back">
                 <ul>
                   <li>Centralized system with calendar integration.</li>
                   <li>Training and attendance management features.</li>
-                  <li>Accessibility and offline access support for users.</li>
+                  <li>Offline and accessibility support for users.</li>
                 </ul>
               </div>
             </div>
