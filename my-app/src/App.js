@@ -1,12 +1,8 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './components/base.css';
 import Navbar from './components/Navbar';
-import CTASection from './components/CTASection';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProjectJourney from './pages/ProjectJourney';
-import Reflection from './pages/Reflection';
 import TeamReflection from './pages/reflection/TeamReflection';
 import TeamContract from './pages/reflection/TeamContract';
 import Questionnaires from './pages/reflection/Questionnaires';
