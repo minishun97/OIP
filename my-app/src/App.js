@@ -31,8 +31,6 @@ function App() {
                     <Route path="/reflection/weekly-pitch-videos" element={<WeeklyPitchVideos />} />
                     <Route path="/about-us" element={<AboutUs />} />
                 </Routes>
-                <CTASection />
-                <Footer />
             </div>
         </Router>
     );
