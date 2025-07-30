@@ -1,0 +1,79 @@
+.about-us-container {
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.about-us-header {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-us-description {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.team-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.team-card {
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.team-member-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-member-description {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.team-card-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+.team-member-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.linkedin-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    transform: scale(1.1);
+}
