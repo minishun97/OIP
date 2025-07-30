@@ -21,7 +21,7 @@ const AboutUs = () => {
             With its large, expressive eyes and pink, round body, it captivates audiences with its melodic voice. 
             Whether in the Pokémon battles or entertaining its friends, my soothing song is both a weapon and a charm!`,
             image: "/images/jigglypuff.jpg",
-            linkedin: "https://www.linkedin.com/in/???"
+            linkedin: "https://www.linkedin.com/in/kuan-yong/"
         },
         {
             name: "Keerthana Keshaini",
