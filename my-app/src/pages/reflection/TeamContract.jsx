@@ -1,9 +1,9 @@
-import Introduction from '../../components/Introduction';
+import TeamContractPDF from '../../components/TeamContractPDF';
 
-const AboutUs = () => (
+const TeamContract = () => (
     <>
-        {/* Add in a Segment here. E.g. '<StakeholderLessons />' */}
+        <TeamContractPDF />
     </>
 );
 
-export default AboutUs;
+export default TeamContract;
