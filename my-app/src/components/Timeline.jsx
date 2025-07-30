@@ -1,5 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import './Timeline.css';
+import { NavLink } from 'react-router-dom';
 import { FaLightbulb, FaUserFriends, FaDraftingCompass, FaVideo, FaCogs, FaComments, FaLaptopCode, FaImage, FaStar } from 'react-icons/fa';
 
 const Timeline = () => (
@@ -20,6 +22,9 @@ const Timeline = () => (
             better understand user needs, focusing on communication, scheduling,
             and accessibility.
         </p>
+        <NavLink to="/reflection/questionnaires" activeClassName="active">
+            <button className="questionnaire-button">Go to Questionnaire</button>
+        </NavLink>
 
       </VerticalTimelineElement>
 

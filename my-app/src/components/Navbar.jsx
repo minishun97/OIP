@@ -40,11 +40,6 @@ const Navbar = () => (
                             Prototyping
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/reflection/weekly-pitch-videos" activeClassName="active">
-                            Weekly Pitch Videos
-                        </NavLink>
-                    </li>
                 </ul>
             </li>
             <li>

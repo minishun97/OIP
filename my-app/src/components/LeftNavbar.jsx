@@ -26,11 +26,6 @@ function LeftNavbar() {
                         Prototyping
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/reflection/weekly-pitch-videos" className="tab-link" activeClassName="active">
-                        Weekly Pitch Videos
-                    </NavLink>
-                </li>
             </ul>
         </div>
     );
