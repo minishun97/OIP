@@ -1,15 +1,15 @@
-import React from 'react';
+import './base.css';
 
 const Footer = () => (
-  <footer style={{ backgroundColor: '#004d40', color: 'white', textAlign: 'center', padding: '30px' }}>
-    <h2>Friends of River Kelvin</h2>
-    <p>Team 22: Lew Jie Shun, Kua Dong Han, Lim Kuan Yong, Keerthana Keshaini, En Thong Lew, Zhi Wen Jeff Tan</p>
-    <div style={{ marginTop: '10px' }}>
-      <a href="https://facebook.com" style={{ margin: '0 10px' }}>
-        <img src="/logos/facebook_logo.png" alt="Facebook" style={{ width: '30px', height: '30px', borderRadius: '5px' }} />
+  <footer className="custom-footer">
+    <h2 className="footer-org">Friends of River Kelvin</h2>
+    <p className="footer-team">Team 22</p>
+    <div className="footer-socials">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="/logos/facebook_logo.png" alt="Facebook" className="footer-icon" />
       </a>
-      <a href="https://instagram.com" style={{ margin: '0 10px' }}>
-        <img src="/logos/instagram_logo.png" alt="Instagram" style={{ width: '30px', height: '30px', borderRadius: '5px' }} />
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="/logos/instagram_logo.png" alt="Instagram" className="footer-icon" />
       </a>
     </div>
   </footer>

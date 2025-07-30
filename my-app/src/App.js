@@ -29,8 +29,6 @@ function App() {
                     <Route path="/reflection/prototyping" element={<Prototyping />} />
                     <Route path="/about-us" element={<AboutUs />} />
                 </Routes>
-                <CTASection />
-                <Footer />
             </div>
         </Router>
     );

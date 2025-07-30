@@ -33,58 +33,79 @@ const Timeline = () => (
         iconStyle={{ background: '#009688', color: '#fff' }}
         icon={<FaUserFriends />}
       >
-        <h3>Customer Need Finding</h3>
+        <div className="timeline-flipcards">
 
-          <p style={{ marginBottom: '12px' }}>
-            Used a <strong>Double Diamond</strong> approach to ensure that our questions were 
-            user-centered and empathetic, reducing bias during interviews.
-          </p>
+          {/* Flipcard 1: Meeting Minutes Highlights */}
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="timeline-flipcard-front">
+                <h4>Meeting Minutes Highlights</h4>
+                <p style={{ marginLeft: '10px' }}>Overview of current workflow, challenges, and brainstormed ideas.</p>
+              </div>
+              <div className="flip-card-back">
+                <div>
+                  <ul>
+                    <li>Manual, fragmented workflow.</li>
+                    <li>Platform & calendar integration proposed.</li>
+                    <li>Need tracking, reporting, and accessibility features.</li>
+                  </ul>
 
-          <h4 style={{ fontWeight: '600', marginTop: '12px', marginBottom: '4px' }}>Meeting Minutes Highlights</h4>
+                  {/* <h5>Ideas & Considerations</h5>
+                  <ul>
+                    <li>Explore existing platforms (scheduling, portals, social media).</li>
+                    <li>Calendar integration is essential.</li>
+                  </ul>
 
-          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Current Workflow & Challenges</h5>
-          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
-            <li>All processes are manual: individual calendar invites and no central volunteer contact list.</li>
-            <li>Communication is strictly 1-to-1.</li>
-            <li>Volunteers assist with events (e.g., litter picking, 4–5 hours, H&S training required).</li>
-          </ul>
+                  <h5>Feature Needs</h5>
+                  <ul>
+                    <li>Track time, notes, availability, training, and accessibility.</li>
+                    <li>Manage expenses, budgets, and no-show reporting.</li>
+                    <li>Implement reward/achievement system.</li>
+                  </ul>
 
-          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Ideas & Considerations</h5>
-          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
-            <li>Explore existing platforms (scheduling systems, login portals, websites, social media).</li>
-            <li>Calendar integration is essential.</li>
-          </ul>
+                  <h5>Volunteer Considerations</h5>
+                  <ul>
+                    <li>Support offline access for volunteers with limited digital access.</li>
+                  </ul> */}
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Feature Needs Identified</h5>
-          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
-            <li>Track time changes, requirements, notes, accessibility, training, availability, and hours volunteered.</li>
-            <li>Manage expenses, budgets, and leftover funds.</li>
-            <li>Flag/report no-shows; track event staffing requirements.</li>
-            <li>Reward/achievement system: milestones, certificates, incentives.</li>
-          </ul>
+          {/* Flipcard 2: Surprising Insights */}
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="timeline-flipcard-front">
+                <h4>Two Surprising Insights</h4>
+                <p>Unexpected issues uncovered during user interviews.</p>
+              </div>
+              <div className="flip-card-back">
+                <ul>
+                  <li>Severe lack of automation in workflow processes.</li>
+                  <li>All communication is 1-to-1; no centralized volunteer platform.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <h5 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Volunteer Considerations</h5>
-          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
-            <li>Ensure accessibility and support for offline access for volunteers without constant digital connectivity.</li>
-          </ul>
+          {/* Flipcard 3: Highlighted Need */}
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="timeline-flipcard-front">
+                <h4>Highlighted Need For</h4>
+                <p>Identified core requirements to enhance operations.</p>
+              </div>
+              <div className="flip-card-back">
+                <ul>
+                  <li>Centralized system with calendar integration.</li>
+                  <li>Training and attendance management features.</li>
+                  <li>Accessibility and offline access support for users.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <h4 style={{ fontWeight: '600', marginTop: '12px', marginBottom: '4px' }}>Two Surprising Insights</h4>
-          <ul style={{ paddingLeft: '20px', marginBottom: '12px' }}>
-            <li>Heavy lack of workload automation.</li>
-            <li>All communication is 1-to-1, no central platform for volunteers and workers.</li>
-          </ul>
-
-          <h4 style={{ fontWeight: '600', marginTop: '8px', marginBottom: '4px' }}>Highlighted Need For</h4>
-          <ul style={{ paddingLeft: '20px' }}>
-            <li>Centralized system with calendar integration.</li>
-            <li>Support for managing training and attendance.</li>
-            <li>
-              Consideration of accessibility and offline access for users 
-              without digital means all the time.
-            </li>
-          </ul>
-
-
+        </div>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
