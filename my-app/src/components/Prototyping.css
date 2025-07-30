@@ -1,9 +1,11 @@
 /* Prototyping.css */
 
-body {
+.prototyping-body {
   font-family: 'Poppins', sans-serif;
   background-color: #FCFEFF;
   color: #333;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 .prototype-section {

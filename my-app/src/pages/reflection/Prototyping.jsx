@@ -26,9 +26,8 @@ const ImageWithModal = ({ src, alt }) => {
   );
 };
 
-
 const Prototyping = () => (
-  <>
+  <div className="prototyping-body"> {/* <-- Added wrapper here */}
     <PrototypeIteration 
       iteration={1} 
       imageUser="/images/user_1.jpg" 
@@ -62,7 +61,8 @@ const Prototyping = () => (
         </div>
       </div>
     </section>
-  </>
+  </div>
 );
 
 export default Prototyping;
+
