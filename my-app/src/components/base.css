@@ -238,3 +238,84 @@ body {
   color: #fff;
   font-weight: bold;
 }
+
+/* Prototype Page Styling */
+
+/* Section Titles */
+.prototype-title {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* Image container card */
+.perspective-card {
+  display: inline-block;
+  padding: 12px;
+  background-color: var(--white-color);
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.perspective-card h3 {
+  color: var(--secondary-color);
+}
+
+/* Responsive flex layout for images */
+.prototype-image-flex {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Image with dynamic border */
+.modal-image {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 6px solid var(--white-color);
+  background-color: var(--white-color);
+  cursor: pointer;
+  display: block;
+}
+
+/* Fullscreen modal overlay */
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+/* Enlarged image in modal */
+.image-modal-content {
+  max-height: 90%;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  background-color: var(--white-color);
+}
+
+/* Feedback section */
+.prototype-feedback {
+  padding: 40px 20px;
+  background-color: var(--light-bg-color);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.prototype-feedback p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
