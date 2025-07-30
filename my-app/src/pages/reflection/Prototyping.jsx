@@ -1,4 +1,31 @@
 import PrototypeIteration from '../../components/PrototypeIteration';
+import { useState } from 'react';
+import '../../components/Prototyping.css'; // adjust path if needed
+import ModalPortal from '../../components/ModalPortal'; // adjust path as needed
+
+const ImageWithModal = ({ src, alt }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <img
+        src={src}
+        alt={alt}
+        className="modal-image"
+        onClick={() => setIsOpen(true)}
+      />
+
+      {isOpen && (
+        <ModalPortal>
+          <div className="image-modal-overlay" onClick={() => setIsOpen(false)}>
+            <img src={src} alt={alt} className="image-modal-content" />
+          </div>
+        </ModalPortal>
+      )}
+    </>
+  );
+};
+
 
 const Prototyping = () => (
   <>
@@ -18,12 +45,22 @@ const Prototyping = () => (
       imageAdmin="/images/admin_3.jpg" 
     />
 
-    <section style={{ padding: '60px 20px', backgroundColor: '#f8f9fa', textAlign: 'center' }}>
-      <h2>Mid-Fi Prototype</h2>
-      <p style={{ maxWidth: '800px', margin: '20px auto' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mid-Fi designs refine structure and usability based on prior feedback.
-      </p>
-      <img src="/images/placeholder_1.jpg" alt="Mid Fi Prototype" style={{ marginTop: '30px', maxWidth: '90%', borderRadius: '12px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }} />
+    <section className="prototype-section">
+      <h2 className="prototype-title">Mid-Fi Prototype</h2>
+      <div className="prototype-image-flex">
+        <div className="perspective-card">
+          <ImageWithModal 
+            src="/images/balloon.jpg" 
+            alt="Mid-Fi Prototype 1" 
+          />
+        </div>
+        <div className="perspective-card">
+          <ImageWithModal 
+            src="/images/balloon.jpg" 
+            alt="Mid-Fi Prototype 2" 
+          />
+        </div>
+      </div>
     </section>
   </>
 );
