@@ -1,9 +1,9 @@
-import Introduction from '../../components/Introduction';
+import Questionnaire from '../../components/Questionnaire';
 
 
 const AboutUs = () => (
     <>
-        {/* Add in a Segment here. E.g. '<StakeholderLessons />' */}
+        <Questionnaire />
     </>
 );
 
