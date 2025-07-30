@@ -1,51 +1,81 @@
-/* Navbar.css */
-
-/* Styles for the Navbar */
-.navbar-container {
-    background-color: var(--light-bg-color);
-    border-bottom: 4px solid var(--secondary-color);
-}
-
 .navbar {
-    background-color: var(--primary-color);
-    /* border-radius: 20px; */
-    padding: 20px 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    /* margin: 20px; */
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-/* Navbar links styling */
 .navbar_links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .navbar_links li {
-    display: inline-block;
+  margin-right: 30px;
+  position: relative;
 }
 
-/* Navbar links */
-.navbar_links a {
-    color: var(--white-color);
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.navbar_links li a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect */
-.navbar_links a:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+.navbar_links li a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
 }
 
-/* Active link state */
-.navbar_links .active {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    border-radius: 5px;
+.navbar_links li a.active {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 200px;
+  margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  display: block;
+  color: var(--white-color);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
 }

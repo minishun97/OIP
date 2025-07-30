@@ -7,6 +7,11 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProjectJourney from './pages/ProjectJourney';
 import Reflection from './pages/Reflection';
+import TeamReflection from './pages/reflection/TeamReflection';
+import TeamContract from './pages/reflection/TeamContract';
+import Questionnaires from './pages/reflection/Questionnaires';
+import Prototyping from './pages/reflection/Prototyping';
+import WeeklyPitchVideos from './pages/reflection/WeeklyPitchVideos';
 import AboutUs from './pages/AboutUs';
 
 function App() {
@@ -19,7 +24,11 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/project-journey" element={<ProjectJourney />} />
-                    <Route path="/reflection/*" element={<Reflection />} />
+                    <Route path="/reflection/team-reflection" element={<TeamReflection />} />
+                    <Route path="/reflection/team-contract" element={<TeamContract />} />
+                    <Route path="/reflection/questionnaires" element={<Questionnaires />} />
+                    <Route path="/reflection/prototyping" element={<Prototyping />} />
+                    <Route path="/reflection/weekly-pitch-videos" element={<WeeklyPitchVideos />} />
                     <Route path="/about-us" element={<AboutUs />} />
                 </Routes>
                 <CTASection />

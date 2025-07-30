@@ -1,9 +1,11 @@
-import Introduction from '../../components/Introduction';
+import LowFiPrototype from '../../components/LowFiPrototype';
+import FeedbackSection from '../../components/FeedbackSection';
 
-const AboutUs = () => (
+const Prototyping = () => (
     <>
-        {/* Add in a Segment here. E.g. '<StakeholderLessons />' */}
+        <LowFiPrototype />
+        <FeedbackSection />
     </>
 );
 
-export default AboutUs;
+export default Prototyping;
