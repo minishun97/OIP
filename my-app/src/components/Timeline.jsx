@@ -100,7 +100,7 @@ const Timeline = () => (
         contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
         <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
-          Kickoff & Questionnaires <span style={{ fontWeight: 'normal' }}>(23 July)</span>
+          Kickoff & Questionnaires <span style={{ fontWeight: 'normal' }}>(23 July 2025)</span>
         </h3>
 
         <p style={{ color: '#333', marginBottom: '12px' }}>
@@ -122,7 +122,7 @@ const Timeline = () => (
         contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
         <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
-          Background Research <span style={{ fontWeight: 'normal' }}>(23 July)</span>
+          Background Research <span style={{ fontWeight: 'normal' }}>(23 - 25 July 2025)</span>
         </h3>
 
         <p style={{ color: '#333', marginBottom: '12px' }}>
@@ -135,27 +135,70 @@ const Timeline = () => (
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        date="Day 3"
         iconStyle={{ background: '#ff9800', color: '#fff' }}
         icon={<FaDraftingCompass />}
+        contentStyle={{
+          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+        }}
+        contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
-        <h3>Prototype Direction</h3>
-        <p>
-          Defined the concept: a social-media-like platform for sharing thoughts
-          on Alexander Thomson’s works. Learned “The Mom Test” and prompt
-          engineering.
+        <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
+          Low-Fi Prototyping Design <span style={{ fontWeight: 'normal' }}>(25 - 28 July 2025)</span>
+        </h3>
+        <p style={{ color: '#333', marginBottom: '12px' }}>
+          We developed low-fidelity wireframes to establish the basic layout and
+          functionality of the platform. These wireframes focused on key user
+          interactions and information architecture, allowing us to iterate quickly
+          based on feedback.
         </p>
+        <NavLink to="/reflection/prototyping" activeClassName="active">
+         <button className="questionnaire-button">Go to Prototype</button>
+        </NavLink>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        date="Day 4"
         iconStyle={{ background: '#673ab7', color: '#fff' }}
         icon={<FaVideo />}
+        contentStyle={{
+          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+        }}
+        contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
-        <h3>First Milestones</h3>
+        <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
+          Mid-Fi Prototyping Design <span style={{ fontWeight: 'normal' }}>(28 - 29 July 2025)</span>
+        </h3>
         <p>
-          Delivered first blog post and video. Created high-fidelity prototype on
-          Figma. Drafted initial feature backlog.
+          We developed mid-fidelity prototypes to refine the user interface and
+          interactions. These prototypes incorporated more detailed design elements,
+          such as typography, colors, and basic interactions, to provide a clearer
+          representation of the final product. 
+        </p>
+        <p style={{ color: '#333', marginBottom: '12px' }}>  
+          A snapshot of it is captured at the 
+          bottom of the prototype page.
+        </p>
+        <NavLink to="/reflection/prototyping" activeClassName="active">
+         <button className="questionnaire-button">Go to Prototype</button>
+        </NavLink>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        iconStyle={{ background: '#795548', color: '#fff' }}
+        icon={<FaCogs />}
+        contentStyle={{
+          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+        }}
+        contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
+      >
+        <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
+          High-Fi Prototyping Design <span style={{ fontWeight: 'normal' }}>(29 July - 2 August 2025)</span>
+        </h3>
+        <p style={{ color: '#333', marginBottom: '12px' }}>
+          We developed high-fidelity prototypes to finalize the user interface and
+          interactions. These prototypes incorporated detailed design elements,
+          such as typography, colors, and interactions, to provide a realistic
+          representation of the final product. A sample of the high-fidelity prototype is available on the
+          <NavLink to="/" activeClassName="active"> Homepage.</NavLink>
         </p>
       </VerticalTimelineElement>
 
