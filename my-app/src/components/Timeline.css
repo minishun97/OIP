@@ -12,3 +12,45 @@
 .questionnaire-button:hover {
     background-color: var(--secondary-color);
 }
+
+/* === Timeline Element Styles === */
+
+.timeline-card {
+  background-color: #FCFEFF;
+  border: 2px solid #008B8A;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 139, 138, 0.2);
+  padding: 20px;
+}
+
+.timeline-icon {
+  background-color: #008B8A !important;
+  color: #fff !important;
+}
+
+.timeline-title {
+  color: #008B8A;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.timeline-title span {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.timeline-text {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.timeline-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #D2EDE8;
+  margin-top: 16px;
+}

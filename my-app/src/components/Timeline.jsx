@@ -10,29 +10,24 @@ const Timeline = () => (
       Our Project Journey
     </h2>
     <VerticalTimeline lineColor="#009B8A">
-
       <VerticalTimelineElement
-        date="Day 1"
-        iconStyle={{ background: '#3f51b5', color: '#fff' }}
-        icon={<FaLightbulb />}
-      >
-        <h3>Day 1 – Kickoff & Questionnaires</h3>
-        <p style={{ marginBottom: '12px' }}>
-            On Day 1, we explored team perspectives and designed a questionnaire to
-            better understand user needs, focusing on communication, scheduling,
-            and accessibility.
-        </p>
-        <NavLink to="/reflection/questionnaires" activeClassName="active">
-            <button className="questionnaire-button">Go to Questionnaire</button>
-        </NavLink>
-
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        date="Day 1"
-        iconStyle={{ background: '#009688', color: '#fff' }}
+        iconStyle={{ background: '#050505ff', color: '#fff' }}
         icon={<FaUserFriends />}
+        contentStyle={{
+          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+        }}
+        contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
+        <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
+          First Business Partner Meeting <span style={{ fontWeight: 'normal' }}>(22 July 2025)</span>
+        </h3>
+
+        <p style={{ color: '#333', marginBottom: '12px' }}>
+          On the first partner meeting day, we met with our organization partner to discuss the project scope and
+          gather initial requirements. This meeting helped us align our goals and expectations. We utilized the
+          double diamond approach learnt from the lecture to communicate with our partner, asking effective questions
+          to uncover their needs.
+        </p>
         <div className="timeline-flipcards">
 
           {/* Flipcard 1: Meeting Minutes Highlights */}
@@ -51,24 +46,6 @@ const Timeline = () => (
                     <li>Platform & calendar integration proposed.</li>
                     <li>Need tracking, reporting, and accessibility features.</li>
                   </ul>
-
-                  {/* <h5>Ideas & Considerations</h5>
-                  <ul>
-                    <li>Explore existing platforms (scheduling, portals, social media).</li>
-                    <li>Calendar integration is essential.</li>
-                  </ul>
-
-                  <h5>Feature Needs</h5>
-                  <ul>
-                    <li>Track time, notes, availability, training, and accessibility.</li>
-                    <li>Manage expenses, budgets, and no-show reporting.</li>
-                    <li>Implement reward/achievement system.</li>
-                  </ul>
-
-                  <h5>Volunteer Considerations</h5>
-                  <ul>
-                    <li>Support offline access for volunteers with limited digital access.</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
@@ -112,6 +89,49 @@ const Timeline = () => (
           </div>
 
         </div>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        iconStyle={{ background: '#008B8A', color: '#fff' }}
+        icon={<FaLightbulb />}
+        contentStyle={{
+          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+        }}
+        contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
+      >
+        <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
+          Kickoff & Questionnaires <span style={{ fontWeight: 'normal' }}>(23 July)</span>
+        </h3>
+
+        <p style={{ color: '#333', marginBottom: '12px' }}>
+          After the day of partner meeting, we explored team perspectives and designed a questionnaire to
+            better understand user needs, focusing on communication, scheduling, and accessibility. 
+        </p>
+
+        <NavLink to="/reflection/questionnaires" activeClassName="active"> 
+         <button className="questionnaire-button">Go to Questionnaire</button>
+        </NavLink>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        iconStyle={{ background: '#008B8A', color: '#fff' }}
+        icon={<FaLightbulb />}
+        contentStyle={{
+          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+        }}
+        contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
+      >
+        <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
+          Background Research <span style={{ fontWeight: 'normal' }}>(23 July)</span>
+        </h3>
+
+        <p style={{ color: '#333', marginBottom: '12px' }}>
+          As part of our background research into Friends of the River Kelvin (FORK), we explored their official website to better understand their branding, offerings, and communication channels. We identified their core color palette by inspecting the site's visual elements, allowing us to integrate a consistent aesthetic into our Figma prototypes. This ensures our design aligns visually with the organization's existing identity and fosters a more authentic user experience.
+        </p>
+        <p>
+          We also examined the site's functionality, particularly the account section, to assess how volunteers might register. Through this, we discovered that signing up as a volunteer requires purchasing a paid membership—volunteer access is not freely available. Additionally, we noted that FORK provides a general contact email (hello@fork.org.uk) for public enquiries, offering a direct channel for follow-up communication or clarification.
+        </p>
+
       </VerticalTimelineElement>
 
       <VerticalTimelineElement

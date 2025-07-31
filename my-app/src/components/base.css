@@ -207,7 +207,7 @@ body {
   text-align: left;         /* 👈 Add this */
   align-items: flex-start;  /* 👈 Add this */
   justify-content: flex-start; /* Optional, aligns content to top-left */
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 
 }
 
