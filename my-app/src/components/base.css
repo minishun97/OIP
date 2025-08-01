@@ -349,3 +349,104 @@ body {
   opacity: 0;
   transform: translateY(60px);
 }
+
+/* Timeline Latter Business Partner Meeting */
+.feedback-cards-container .insight-card-back {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.insight-card {
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.insight-card:hover {
+  transform: scale(1.05);
+}
+
+.insight-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.insight-card:hover .insight-card-inner {
+  transform: rotateY(180deg);
+}
+
+.insight-card-front,
+.insight-card-back {
+  position: absolute;
+  height: 250px;
+  backface-visibility: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+/* Animated gradient for front */
+.insight-card-front {
+  z-index: 2;
+  background: linear-gradient(-45deg, #80deea, #4db6ac, #26a69a, #80cbc4);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+  font-weight: bold;
+}
+
+.insight-card-back {
+  background-color: #ffffff;
+  color: #333;
+  transform: rotateY(180deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  padding: 8px 20px 20px 12px;
+}
+
+.insight-card-back::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+  transform: scale(1.05);
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.insight-card-back p {
+  position: relative;
+  z-index: 1;
+}
+
+.insight-card-back li {
+  margin-bottom: 8px;
+}
+
+.insight-card-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.insight-card-content h3 {
+  margin-bottom: 8px;
+}
+
+.insight-card-content p {
+  margin: 0;
+}

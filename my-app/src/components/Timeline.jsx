@@ -19,7 +19,7 @@ const Timeline = () => (
         contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
         <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
-          First Business Partner Meeting <span style={{ fontWeight: 'normal' }}>(22 July 2025)</span>
+          Former Business Partner Meeting <span style={{ fontWeight: 'normal' }}>(22 July 2025)</span>
         </h3>
 
         <p style={{ color: '#333', marginBottom: '12px' }}>
@@ -157,29 +157,76 @@ const Timeline = () => (
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        iconStyle={{ background: '#673ab7', color: '#fff' }}
-        icon={<FaVideo />}
+        iconStyle={{ background: '#00bcd4', color: '#fff' }}
+        icon={<FaUserFriends />}
         contentStyle={{
-          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+          background: '#FCFEFF',
+          border: '2px solid #008B8A',
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)',
+          padding: '20px',
         }}
         contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
         <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
-          Mid-Fi Prototyping Design <span style={{ fontWeight: 'normal' }}>(28 - 29 July 2025)</span>
+          Latter Business Partner Meeting <span style={{ fontWeight: 'normal' }}>(31 July 2025)</span>
         </h3>
-        <p>
-          We developed mid-fidelity prototypes to refine the user interface and
-          interactions. These prototypes incorporated more detailed design elements,
-          such as typography, colors, and basic interactions, to provide a clearer
-          representation of the final product. 
+
+        <p style={{ color: '#333', marginBottom: '12px' }}>
+          During this follow-up meeting with Friends of River Kelvin, we presented our mid-fidelity prototype
+          (derived from 3 low-fi versions) and shared the vision for the high-fidelity system. The partner gave detailed feedback
+          on features, usability, accessibility, and system analytics, which helped shape the future implementation plan.
         </p>
-        <p style={{ color: '#333', marginBottom: '12px' }}>  
-          A snapshot of it is captured at the 
-          bottom of the prototype page.
-        </p>
-        <NavLink to="/reflection/prototyping" activeClassName="active">
-         <button className="questionnaire-button">Go to Prototype</button>
-        </NavLink>
+
+        <div className="feedback-cards-container">
+
+          {/* Card 1: Positive Feedback */}
+          <div className="insight-card" style={{ minHeight: '220px' }}>
+            <div className="insight-card-inner">
+              <div className="insight-card-front">
+                <div className="insight-card-content">
+                  <h3>What They Liked</h3>
+                  <p>Positive feedback on current features and interface design.</p>
+                </div>  
+              </div>
+              <div className="insight-card-back">
+                <ul>
+                  <li>Centralised calendar for event overview</li>
+                  <li>Available volunteering opportunities listed clearly</li>
+                  <li>Human touch through chat and call options</li>
+                  <li>Same functions on both website and mobile app</li>
+                  <li>Notification/reminder system for events</li>
+                  <li>Web and mobile accessibility</li>
+                  <li>Minimalist, easy-to-navigate design, especially for senior demographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2: Suggestions */}
+          <div className="insight-card" style={{ minHeight: '220px' }}>
+            <div className="insight-card-inner">
+              <div className="insight-card-front">
+                <div className="insight-card-content">
+                  <h3>Suggestions for Improvement</h3>
+                  <p>Feature requests to enhance accessibility and backend analytics.</p>
+                </div>  
+              </div>
+              <div className="insight-card-back">
+                <ul>
+                  <li>Add option to specify accessibility requirements on signup</li>
+                  <li>Create dashboard with export (Excel) functionality</li>
+                  <li>Track total volunteer hours per person</li>
+                  <li>Show number of active volunteers per event</li>
+                  <li>Display waitlists for fully booked events</li>
+                  <li>Track number of clicks and signups/bookings</li>
+                  <li>Include “volunteered since” data for records</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
@@ -199,77 +246,6 @@ const Timeline = () => (
           such as typography, colors, and interactions, to provide a realistic
           representation of the final product. A sample of the high-fidelity prototype is available on the
           <NavLink to="/" activeClassName="active"> Homepage.</NavLink>
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        date="Day 7"
-        iconStyle={{ background: '#795548', color: '#fff' }}
-        icon={<FaCogs />}
-      >
-        <h3>Feature Backlog Update</h3>
-        <p>
-          Broke down features into Home, Gallery, History, Newsletter pages.
-          Completed event scraping tool & integration.
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        date="Day 8"
-        iconStyle={{ background: '#607d8b', color: '#fff' }}
-        icon={<FaComments />}
-      >
-        <h3>Clarification</h3>
-        <p>
-          Clarified specifications with client and refined feature backlog for
-          development.
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        date="Day 9"
-        iconStyle={{ background: '#00bcd4', color: '#fff' }}
-        icon={<FaUserFriends />}
-      >
-        <h3>Customer Meeting</h3>
-        <p>
-          Presented prototype at The Mitchell Library. Client feedback was positive.
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        date="Day 10"
-        iconStyle={{ background: '#4caf50', color: '#fff' }}
-        icon={<FaImage />}
-      >
-        <h3>Development & Poster Design</h3>
-        <p>
-          Continued development of pending features. Drafted multiple poster designs.
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        date="Day 11"
-        iconStyle={{ background: '#e91e63', color: '#fff' }}
-        icon={<FaLaptopCode />}
-      >
-        <h3>Final Development</h3>
-        <p>
-          Completed major features. Delivered second blog post and progress video.
-          Pending tasks: regex filter, image explanation, deployment.
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        date="Final Submission"
-        iconStyle={{ background: '#ffc107', color: '#fff' }}
-        icon={<FaStar />}
-      >
-        <h3>Presentation & Reflection</h3>
-        <p>
-          Delivered blog post, demo video, and final presentation. Achieved an
-          interactive platform that encourages organic exploration of Alexander
-          Thomson’s works.
         </p>
       </VerticalTimelineElement>
 
