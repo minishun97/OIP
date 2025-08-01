@@ -2,7 +2,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.css';
 import { NavLink } from 'react-router-dom';
-import { FaLightbulb, FaUserFriends, FaDraftingCompass, FaVideo, FaCogs, FaComments, FaLaptopCode, FaImage, FaStar } from 'react-icons/fa';
+import { FaLightbulb, FaUserFriends, FaDraftingCompass, FaVideo, FaCogs, FaComments } from 'react-icons/fa';
 
 const Timeline = () => (
   <section id="timeline" style={{ padding: '60px 0', backgroundColor: '#fff' }}>
@@ -11,8 +11,8 @@ const Timeline = () => (
     </h2>
     <VerticalTimeline lineColor="#009B8A">
       <VerticalTimelineElement
-        iconStyle={{ background: '#050505ff', color: '#fff' }}
-        icon={<FaUserFriends />}
+        iconStyle={{ background: '#60bd0eff', color: '#fff' }}
+        icon={<FaComments />}
         contentStyle={{
           background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
         }}
@@ -93,7 +93,7 @@ const Timeline = () => (
 
       <VerticalTimelineElement
         iconStyle={{ background: '#008B8A', color: '#fff' }}
-        icon={<FaLightbulb />}
+        icon={<FaVideo />}
         contentStyle={{
           background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
         }}
@@ -114,7 +114,7 @@ const Timeline = () => (
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        iconStyle={{ background: '#008B8A', color: '#fff' }}
+        iconStyle={{ background: '#c31a7fff', color: '#fff' }}
         icon={<FaLightbulb />}
         contentStyle={{
           background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
