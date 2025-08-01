@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/OIP/static/css/main.dcadd8fd.css",
+    "main.js": "/OIP/static/js/main.e4450426.js",
+    "index.html": "/OIP/index.html",
+    "main.dcadd8fd.css.map": "/OIP/static/css/main.dcadd8fd.css.map",
+    "main.e4450426.js.map": "/OIP/static/js/main.e4450426.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcadd8fd.css",
+    "static/js/main.e4450426.js"
+  ]
+}
