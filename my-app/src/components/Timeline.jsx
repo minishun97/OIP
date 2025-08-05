@@ -1,6 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.css';
+import './FBusinessPartner.css';
 import { NavLink } from 'react-router-dom';
 import { FaLightbulb, FaUserFriends, FaDraftingCompass, FaVideo, FaCogs, FaComments } from 'react-icons/fa';
 
@@ -14,7 +15,11 @@ const Timeline = () => (
         iconStyle={{ background: '#60bd0eff', color: '#fff' }}
         icon={<FaComments />}
         contentStyle={{
-          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+          background: '#FCFEFF',
+          border: '2px solid #008B8A',
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)',
+          padding: '20px',
         }}
         contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
@@ -28,33 +33,31 @@ const Timeline = () => (
           double diamond approach learnt from the lecture to communicate with our partner, asking effective questions
           to uncover their needs.
         </p>
-        <div className="timeline-flipcards">
 
-          {/* Flipcard 1: Meeting Minutes Highlights */}
+        <div className="timeline-flipcards">
+          {/* Flipcard 1 */}
           <div className="flip-card">
             <div className="flip-card-inner">
-              <div className="timeline-flipcard-front">
+              <div className="flip-card-front">
                 <div className="card-content">
                   <h3>Meeting Minutes Highlights</h3>
                   <p>Overview of current workflow, challenges, and suggested solution.</p>
-                </div>  
+                </div>
               </div>
               <div className="flip-card-back">
-                <div>
-                  <ul>
-                    <li>Manual, fragmented workflow.</li>
-                    <li>Platform & calendar integration proposed.</li>
-                    <li>Need tracking, reporting, and accessibility features.</li>
-                  </ul>
-                </div>
+                <ul>
+                  <li>Manual, fragmented workflow.</li>
+                  <li>Platform & calendar integration proposed.</li>
+                  <li>Need tracking, reporting, and accessibility features.</li>
+                </ul>
               </div>
             </div>
           </div>
 
-          {/* Flipcard 2: Surprising Insights */}
+          {/* Flipcard 2 */}
           <div className="flip-card">
             <div className="flip-card-inner">
-              <div className="timeline-flipcard-front">
+              <div className="flip-card-front">
                 <div className="card-content">
                   <h4>Insights Discovered</h4>
                   <p>Unexpected issues uncovered during business partner interview.</p>
@@ -69,10 +72,10 @@ const Timeline = () => (
             </div>
           </div>
 
-          {/* Flipcard 3: Highlighted Need */}
+          {/* Flipcard 3 */}
           <div className="flip-card">
             <div className="flip-card-inner">
-              <div className="timeline-flipcard-front">
+              <div className="flip-card-front">
                 <div className="card-content">
                   <h4>User Needs</h4>
                   <p>Identified requirements to meet user pain points and enhance overall experience.</p>
@@ -87,7 +90,6 @@ const Timeline = () => (
               </div>
             </div>
           </div>
-
         </div>
       </VerticalTimelineElement>
 
@@ -233,20 +235,27 @@ const Timeline = () => (
         iconStyle={{ background: '#795548', color: '#fff' }}
         icon={<FaCogs />}
         contentStyle={{
-          background: '#FCFEFF', border: '2px solid #008B8A', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)', padding: '20px',
+          background: '#FCFEFF',
+          border: '2px solid #008B8A',
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)',
+          padding: '20px',
         }}
         contentArrowStyle={{ borderRight: '7px solid #008B8A' }}
       >
         <h3 style={{ color: '#008B8A', fontWeight: 'bold', marginBottom: '10px' }}>
-          High-Fi Prototyping Design <span style={{ fontWeight: 'normal' }}>(29 July - 2 August 2025)</span>
+          High-Fi Prototyping Design <span style={{ fontWeight: 'normal' }}>(29 July – 2 August 2025)</span>
         </h3>
         <p style={{ color: '#333', marginBottom: '12px' }}>
           We developed high-fidelity prototypes to finalize the user interface and
           interactions. These prototypes incorporated detailed design elements,
           such as typography, colors, and interactions, to provide a realistic
-          representation of the final product. A sample of the high-fidelity prototype is available on the
-          <NavLink to="/" activeClassName="active"> Homepage.</NavLink>
+          representation of the final product.
         </p>
+
+        <NavLink to="/" className="nav-homepage-button">
+          Go to Homepage
+        </NavLink>
       </VerticalTimelineElement>
 
     </VerticalTimeline>
