@@ -16,7 +16,7 @@ const TeamContractPDF = () => {
                 src="/OIP/pdfs/TeamContract.pdf"
                 type="application/pdf"
                 width="100%"
-                height="600px"
+                height="80vh"
                 />
             </div>
         </div>
