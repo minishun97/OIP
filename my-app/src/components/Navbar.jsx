@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import './Navbar.css';
 
@@ -7,13 +7,22 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [reflectionOpen, setReflectionOpen] = useState(false);
 
+    const location = useLocation(); // Get the current location
+
+    // Toggle menu open/close
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+    // Toggle reflection dropdown open/close
     const toggleReflection = () => {
         setReflectionOpen(!reflectionOpen);
     };
+
+    // Reset the menu state when location (route) changes
+    useEffect(() => {
+        setMenuOpen(false); // Close the menu on route change
+    }, [location]);
 
     return (
         <nav className="navbar">
