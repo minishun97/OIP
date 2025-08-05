@@ -30,18 +30,18 @@ const Prototyping = () => (
   <div className="prototyping-body"> {/* <-- Added wrapper here */}
     <PrototypeIteration 
       iteration={1} 
-      imageUser="/images/user_1.jpg" 
-      imageAdmin="/images/admin_1.jpg" 
+      imageUser="/OIP/images/user_1.jpg" 
+      imageAdmin="/OIP/images/admin_1.jpg" 
     />
     <PrototypeIteration 
       iteration={2} 
-      imageUser="/images/user_2.jpg" 
-      imageAdmin="/images/admin_2.jpg" 
+      imageUser="/OIP/images/user_2.jpg" 
+      imageAdmin="/OIP/images/admin_2.jpg" 
     />
     <PrototypeIteration 
       iteration={3} 
-      imageUser="/images/user_3.jpg" 
-      imageAdmin="/images/admin_3.jpg" 
+      imageUser="/OIP/images/user_3.jpg" 
+      imageAdmin="/OIP/images/admin_3.jpg" 
     />
 
     <section className="prototype-section">
@@ -49,13 +49,13 @@ const Prototyping = () => (
       <div className="prototype-image-flex">
         <div className="perspective-card">
           <ImageWithModal 
-            src="/images/balloon.jpg" 
+            src="/OIP/images/balloon.jpg" 
             alt="Mid-Fi Prototype 1" 
           />
         </div>
         <div className="perspective-card">
           <ImageWithModal 
-            src="/images/balloon.jpg" 
+            src="/OIP/images/balloon.jpg" 
             alt="Mid-Fi Prototype 2" 
           />
         </div>

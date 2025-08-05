@@ -1,7 +1,7 @@
 const lessons = [
-  { title: "Low Community Engagement", text: "Lack of awareness and scattered information reduce participation.", image: "/images/community.jpg"},
-  { title: "Inefficient Volunteer Sign Up", text: "Current workflow is manual, hard to track, and slow.", image: "/images/join_us.jpg" },
-  { title: "Poor Visibility of Events", text: "No centralized platform to share or register for events.", image: "/images/balloon.jpg" }
+  { title: "Low Community Engagement", text: "Lack of awareness and scattered information reduce participation.", image: "/OIP/images/community.jpg"},
+  { title: "Inefficient Volunteer Sign Up", text: "Current workflow is manual, hard to track, and slow.", image: "/OIP/images/join_us.jpg" },
+  { title: "Poor Visibility of Events", text: "No centralized platform to share or register for events.", image: "/OIP/images/balloon.jpg" }
 ];
 
 const StakeholderLessons = () => (

@@ -20,7 +20,7 @@ const AboutUs = () => {
             description: `I am a beloved Pokémon known for its ability to put opponents to sleep by singing a lullaby. 
             With its large, expressive eyes and pink, round body, it captivates audiences with its melodic voice. 
             Whether in the Pokémon battles or entertaining its friends, my soothing song is both a weapon and a charm!`,
-            image: "/images/jigglypuff.jpg",
+            image: "/OIP/images/jigglypuff.jpg",
             linkedin: "https://www.linkedin.com/in/kuan-yong/"
         },
         {
