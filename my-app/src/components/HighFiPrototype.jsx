@@ -22,8 +22,8 @@ const HighFiPrototype = () => (
         <h3 style={{ marginBottom: '15px' }}>Mobile</h3>
         <iframe
           style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-          width="500"
-          height="300"
+          width="400"
+          height="250"
           src="https://embed.figma.com/design/t62H9YivWSf22oHUXzveJs/OIP-FORK-PROTOTYPE?node-id=0-1&embed-host=share"
           allowFullScreen
           title="Figma Embed Mobile"
@@ -35,8 +35,8 @@ const HighFiPrototype = () => (
         <h3 style={{ marginBottom: '15px' }}>Website</h3>
         <iframe
           style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-          width="500"
-          height="300"
+          width="400"
+          height="250"
           src="https://embed.figma.com/design/t62H9YivWSf22oHUXzveJs/OIP-FORK-PROTOTYPE?node-id=0-1&embed-host=share"
           allowFullScreen
           title="Figma Embed Website"
