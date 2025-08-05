@@ -13,7 +13,7 @@ const TeamContractPDF = () => {
             
             <div className="pdf-container">
                 <embed
-                src="/pdfs/TeamContract.pdf"
+                src="/OIP/pdfs/TeamContract.pdf"
                 type="application/pdf"
                 width="100%"
                 height="600px"
