@@ -15,19 +15,15 @@
     margin-bottom: 40px;
 }
 
-/* Adjust grid layout for team cards */
 .team-cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Default for larger screens */
     gap: 20px;
 }
 
-/* For smaller screens, stack the cards vertically (1 per row) */
 @media (max-width: 768px) {
     .team-cards-container {
         grid-template-columns: 1fr;
-        /* 1 card per row */
     }
 }
 
@@ -78,7 +74,6 @@
     margin-bottom: 10px;
 }
 
-/* Style for LinkedIn icon */
 .linkedin-icon {
     width: 30px;
     height: 30px;

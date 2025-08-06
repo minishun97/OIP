@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes} from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './components/base.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -10,7 +10,7 @@ import Prototyping from './pages/reflection/Prototyping';
 import AboutUs from './pages/AboutUs';
 
 function App() {
-  return (
+    return (
         <Router>
             <div className="App">
                 <div className="navbar-container">
