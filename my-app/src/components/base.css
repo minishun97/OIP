@@ -1,18 +1,12 @@
 /* Base Colors */
 :root {
     --primary-color: #008B8A;
-    /* Deep Teal */
     --secondary-color: #A04E00;
-    /* Warm Brown */
     --accent-color: #FFD4B1;
-    /* Soft Peachy Pink */
     --light-bg-color: #D2EDE8;
-    /* Light Minty Teal */
     --white-color: #FCFFFF;
-    /* Very Light White */
 }
 
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--light-bg-color);
@@ -21,7 +15,6 @@ body {
     padding: 0;
 }
 
-/* Animated Background */
 .animated-bg {
     background: linear-gradient(-45deg, #004d40, #009688, #00796b, #004d40);
     background-size: 400% 400%;
@@ -42,7 +35,6 @@ body {
     }
 }
 
-/* For Flipcards */
 .flip-card {
     perspective: 1000px;
     transition: transform 0.3s ease;
@@ -78,7 +70,6 @@ body {
     text-align: center;
 }
 
-/* Animated gradient for front */
 .flip-card-front {
     z-index: 2;
     background: linear-gradient(-45deg, #80deea, #4db6ac, #26a69a, #80cbc4);
@@ -88,7 +79,6 @@ body {
     font-weight: bold;
 }
 
-/* Back is simple white */
 .flip-card-back {
     background-color: #ffffff;
     color: #333;
@@ -111,7 +101,6 @@ body {
     background-repeat: no-repeat;
     filter: blur(1px);
     transform: scale(1.05);
-    /* Prevents blur edge clipping */
     z-index: 0;
     opacity: 0.85;
 }
@@ -121,7 +110,6 @@ body {
     z-index: 1;
 }
 
-/* Gradient animation */
 @keyframes gradientMove {
     0% {
         background-position: 0% 50%;
@@ -136,7 +124,6 @@ body {
     }
 }
 
-/* Contact Us CTA Section */
 .cta-section {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -180,13 +167,11 @@ body {
     transform: translateY(-2px);
 }
 
-/* Footer */
 .custom-footer {
     background-color: var(--primary-color);
     color: var(--white-color);
     text-align: center;
     padding: 20px 10px;
-    /* Reduced from 40px */
     border-top: 4px solid var(--accent-color);
 }
 
@@ -207,7 +192,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 14px;
-    /* Reduced spacing between icons */
     margin-top: 6px;
 }
 
@@ -224,39 +208,29 @@ body {
     filter: brightness(115%);
 }
 
-/* Timeline */
 .timeline-flipcards .flip-card-back {
     background-color: var(--secondary-color);
     color: var(--white-color);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     text-align: left;
-    /* 👈 Add this */
     align-items: flex-start;
-    /* 👈 Add this */
     justify-content: flex-start;
-    /* Optional, aligns content to top-left */
     margin-bottom: 10px;
 }
 
 .flip-card-back {
     padding: 8px 20px 20px 12px;
-    /* top right bottom left */
 }
 
 .flip-card-back li {
     margin-bottom: 8px;
-    /* or 10px if you want more */
 }
 
-/* Prototype Page Styling */
-
-/* Section Titles */
 .prototype-title {
     text-align: center;
     color: var(--primary-color);
 }
 
-/* Image container card */
 .perspective-card {
     display: inline-block;
     padding: 12px;
@@ -270,7 +244,6 @@ body {
     color: var(--secondary-color);
 }
 
-/* Responsive flex layout for images */
 .prototype-image-flex {
     display: flex;
     justify-content: center;
@@ -279,7 +252,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Image with dynamic border */
 .modal-image {
     height: 300px;
     width: auto;
@@ -291,7 +263,6 @@ body {
     display: block;
 }
 
-/* Fullscreen modal overlay */
 .image-modal-overlay {
     position: fixed;
     top: 0;
@@ -306,7 +277,6 @@ body {
     cursor: zoom-out;
 }
 
-/* Enlarged image in modal */
 .image-modal-content {
     max-height: 90%;
     max-width: 90%;
@@ -315,7 +285,6 @@ body {
     background-color: var(--white-color);
 }
 
-/* Feedback section */
 .prototype-feedback {
     padding: 40px 20px;
     background-color: var(--light-bg-color);
@@ -329,7 +298,6 @@ body {
     line-height: 1.6;
 }
 
-/* Non-conflicting styles for section animation */
 .fade-section {
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     opacity: 0;
@@ -346,7 +314,6 @@ body {
     transform: translateY(60px);
 }
 
-/* Timeline Latter Business Partner Meeting */
 .feedback-cards-container .insight-card-back {
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -391,7 +358,6 @@ body {
     text-align: left;
 }
 
-/* Animated gradient for front */
 .insight-card-front {
     z-index: 2;
     background: linear-gradient(-45deg, #80deea, #4db6ac, #26a69a, #80cbc4);
@@ -450,42 +416,35 @@ body {
     margin: 0;
 }
 
-/* For smaller devices (tablets and phones) */
 @media (max-width: 1024px) {
 
-    /* Flipcards */
     .flip-card-front,
     .flip-card-back {
         height: 120px;
         padding: 10px;
     }
 
-    /* CTA Section */
     .cta-section {
         padding: 40px 15px;
         font-size: 1.1rem;
     }
 
-    /* Feedback and timeline cards */
     .insight-card-front,
     .insight-card-back {
         height: 200px;
     }
 
-    /* Footer */
     .footer-socials {
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    /* Prototype images flex layout */
     .prototype-image-flex {
         gap: 20px;
         margin-top: 20px;
     }
 }
 
-/* For mobile screens */
 @media (max-width: 480px) {
     body {
         font-size: 14px;
@@ -523,7 +482,6 @@ body {
     }
 }
 
-/* For larger devices (desktop view) */
 @media (min-width: 1200px) {
     .cta-section {
         padding: 80px 40px;
