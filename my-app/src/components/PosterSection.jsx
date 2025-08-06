@@ -11,7 +11,7 @@ const PosterSection = () => (
         The poster represents the culmination of our project, showcasing the final design and key insights. It serves as a visual summary of our journey and findings, designed to engage and inform stakeholders.
     </p>
     <img
-      src="/OIP/images/final-poster.jpg" // Replace with actual path in your public directory
+      src="/OIP/images/Poster.png" // Replace with actual path in your public directory
       alt="Final A1 Poster"
       style={{
         maxWidth: '90%',
