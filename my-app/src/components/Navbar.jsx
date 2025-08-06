@@ -45,8 +45,8 @@ const Navbar = () => {
                             PROJECT JOURNEY
                         </NavLink>
                     </li>
-                    <li 
-                        className={`dropdown ${reflectionOpen ? 'active' : ''}`} 
+                    <li
+                        className={`dropdown ${reflectionOpen ? 'active' : ''}`}
                         onClick={toggleReflection}
                         onMouseEnter={() => setReflectionOpen(true)}
                         onMouseLeave={() => setReflectionOpen(false)}

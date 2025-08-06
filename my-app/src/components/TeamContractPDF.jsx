@@ -10,13 +10,13 @@ const TeamContractPDF = () => {
                 for our team throughout the course of the project. Please review the terms and
                 ensure your commitment to the team contract.
             </p>
-            
+
             <div className="pdf-container">
                 <embed
-                src="/OIP/pdfs/TeamContract.pdf"
-                type="application/pdf"
-                width="100%"
-                height="80vh"
+                    src="/OIP/pdfs/TeamContract.pdf"
+                    type="application/pdf"
+                    width="100%"
+                    height="80vh"
                 />
             </div>
         </div>

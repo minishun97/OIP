@@ -12,7 +12,7 @@ const Home = () => (
         <StakeholderLessons />
         <HighFiPrototype />
         <Advantages />
-        <PosterSection/>
+        <PosterSection />
         <CTASection />
         <Footer />
     </>

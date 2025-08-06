@@ -18,12 +18,12 @@ const TeamReflection = () => (
             <div className="reflection-section">
                 <h3 className="reflection-heading">Team Reflection: Key Insights from Week 1</h3>
                 <ul className="reflection-list">
-                <li><strong>Manual Coordination:</strong> Heavy workload on one person, prone to inefficiencies.</li>
-                <li><strong>Automation Need:</strong> Streamlining volunteer management is crucial.</li>
-                <li><strong>Communication Gap:</strong> Lack of a centralized system creates friction.</li>
-                <li><strong>Accessibility:</strong> Inclusivity for digitally excluded and differently-abled users is essential.</li>
-                <li><strong>Balanced Design:</strong> Clients value both digital tools and personal interaction.</li>
-                <li><strong>Prototyping Direction:</strong> We aim for a human-centered, centralized volunteer system.</li>
+                    <li><strong>Manual Coordination:</strong> Heavy workload on one person, prone to inefficiencies.</li>
+                    <li><strong>Automation Need:</strong> Streamlining volunteer management is crucial.</li>
+                    <li><strong>Communication Gap:</strong> Lack of a centralized system creates friction.</li>
+                    <li><strong>Accessibility:</strong> Inclusivity for digitally excluded and differently-abled users is essential.</li>
+                    <li><strong>Balanced Design:</strong> Clients value both digital tools and personal interaction.</li>
+                    <li><strong>Prototyping Direction:</strong> We aim for a human-centered, centralized volunteer system.</li>
                 </ul>
             </div>
         </div>

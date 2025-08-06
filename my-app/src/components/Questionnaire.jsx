@@ -6,7 +6,7 @@ const Questionnaire = () => {
             <h1 className="header">Volunteer Management Questionnaire</h1>
 
             <p className="description">
-                This questionnaire helps us better understand volunteer management processes, 
+                This questionnaire helps us better understand volunteer management processes,
                 focusing on communication, scheduling, and accessibility.
             </p>
 

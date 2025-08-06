@@ -19,7 +19,8 @@
 }
 
 .logo-text {
-    font-family: 'SpecialFont', sans-serif;  /* Replace with your special font */
+    font-family: 'SpecialFont', sans-serif;
+    /* Replace with your special font */
     font-size: 24px;
     color: var(--white-color);
     margin: 0;
@@ -64,9 +65,11 @@
 
 /* Active link state */
 .navbar_links li a.active {
-    background-color: var(--accent-color);  /* Keep the original background color */
+    background-color: var(--accent-color);
+    /* Keep the original background color */
     color: var(--primary-color);
-    padding: 10px 15px;  /* Keep the padding consistent */
+    padding: 10px 15px;
+    /* Keep the padding consistent */
     border-radius: 5px;
 }
 
@@ -103,7 +106,7 @@
     list-style-type: none;
 }
 
-.dropdown.active .dropdown-menu, 
+.dropdown.active .dropdown-menu,
 .dropdown-menu.open {
     display: block;
 }
@@ -149,17 +152,21 @@
 
     .navbar_links li a {
         font-size: 16px;
-        padding: 10px 15px;  /* Reduced padding to avoid overlap */
+        padding: 10px 15px;
+        /* Reduced padding to avoid overlap */
         border-radius: 5px;
         box-sizing: border-box;
     }
 
     /* Active state adjustments for mobile */
     .navbar_links li a.active {
-        background-color: var(--accent-color);  /* Keep background color on active link */
+        background-color: var(--accent-color);
+        /* Keep background color on active link */
         color: var(--primary-color);
-        padding: 8px 12px;  /* Ensure padding stays consistent */
-        margin-bottom: 10px;  /* Ensure no overlap with next link */
+        padding: 8px 12px;
+        /* Ensure padding stays consistent */
+        margin-bottom: 10px;
+        /* Ensure no overlap with next link */
         border-radius: 5px;
     }
 
@@ -175,7 +182,8 @@
     }
 
     .logo-text {
-        font-size: 20px; /* Adjust size for mobile */
+        font-size: 20px;
+        /* Adjust size for mobile */
     }
 
     /* When the hamburger menu is open, stack the links vertically */
