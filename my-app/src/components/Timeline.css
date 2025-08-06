@@ -13,8 +13,6 @@
     background-color: var(--secondary-color);
 }
 
-/* === Timeline Element Styles === */
-
 .timeline-card {
     background-color: #FCFEFF;
     border: 2px solid #008B8A;

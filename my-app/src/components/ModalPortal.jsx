@@ -1,4 +1,3 @@
-/* For the placement of the prototyping reflection page */
 import { createPortal } from 'react-dom';
 
 const ModalPortal = ({ children }) => {

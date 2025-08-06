@@ -1,7 +1,7 @@
 import PrototypeIteration from '../../components/PrototypeIteration';
 import { useState } from 'react';
-import '../../components/Prototyping.css'; // adjust path if needed
-import ModalPortal from '../../components/ModalPortal'; // adjust path as needed
+import '../../components/Prototyping.css';
+import ModalPortal from '../../components/ModalPortal';
 
 const ImageWithModal = ({ src, alt }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const ImageWithModal = ({ src, alt }) => {
 };
 
 const Prototyping = () => (
-    <div className="prototyping-body"> {/* <-- Added wrapper here */}
+    <div className="prototyping-body">
         <PrototypeIteration
             iteration={1}
             imageUser="/OIP/images/user_1.jpg"

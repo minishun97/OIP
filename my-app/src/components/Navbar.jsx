@@ -7,21 +7,18 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [reflectionOpen, setReflectionOpen] = useState(false);
 
-    const location = useLocation(); // Get the current location
+    const location = useLocation();
 
-    // Toggle menu open/close
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Toggle reflection dropdown open/close
     const toggleReflection = () => {
         setReflectionOpen(!reflectionOpen);
     };
 
-    // Reset the menu state when location (route) changes
     useEffect(() => {
-        setMenuOpen(false); // Close the menu on route change
+        setMenuOpen(false);
     }, [location]);
 
     return (
@@ -54,7 +51,6 @@ const Navbar = () => {
                         <span className="dropdown-toggle">
                             REFLECTION
                         </span>
-                        {/* Sub-menu for Reflection */}
                         <ul className={`dropdown-menu ${reflectionOpen ? 'open' : ''}`}>
                             <li>
                                 <NavLink to="/reflection/team-reflection" activeClassName="active">

@@ -182,7 +182,6 @@ const Timeline = () => (
 
                 <div className="feedback-cards-container">
 
-                    {/* Card 1: Positive Feedback */}
                     <div className="insight-card" style={{ minHeight: '220px' }}>
                         <div className="insight-card-inner">
                             <div className="insight-card-front">
@@ -205,7 +204,6 @@ const Timeline = () => (
                         </div>
                     </div>
 
-                    {/* Card 2: Suggestions */}
                     <div className="insight-card" style={{ minHeight: '220px' }}>
                         <div className="insight-card-inner">
                             <div className="insight-card-front">

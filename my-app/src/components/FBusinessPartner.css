@@ -1,13 +1,10 @@
-/* Flip card container */
 .flip-card {
     width: 100%;
     margin: 5px 0;
     perspective: 1000px;
     height: auto;
-    /* Let the height fit the content */
 }
 
-/* Flip card inner */
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -16,12 +13,10 @@
     transition: transform 0.6s ease-in-out;
 }
 
-/* Flip effect */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Front and back faces */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -35,14 +30,12 @@
     left: 0;
 }
 
-/* Front face */
 .flip-card-front {
     background-color: #008B8A;
     color: white;
     text-align: left;
 }
 
-/* Back face */
 .flip-card-back {
     background-color: #e6f8f7;
     color: #333;
@@ -50,7 +43,6 @@
     text-align: left;
 }
 
-/* Card content wrapper */
 .card-content {
     display: flex;
     flex-direction: column;
@@ -58,14 +50,12 @@
     height: 100%;
 }
 
-/* Flipcards container */
 .timeline-flipcards {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-/* Responsive behavior */
 @media (max-width: 768px) {
     .timeline-flipcards {
         flex-direction: column;

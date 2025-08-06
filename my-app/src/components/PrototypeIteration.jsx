@@ -1,7 +1,7 @@
-import useInView from '../hooks/useInView'; // adjust path if needed
+import useInView from '../hooks/useInView';
 import { useState } from 'react';
-import './Prototyping.css'; // adjust path if needed
-import ModalPortal from './ModalPortal'; // adjust path as needed
+import './Prototyping.css';
+import ModalPortal from './ModalPortal';
 
 const ImageWithModal = ({ src, alt }) => {
     const [isOpen, setIsOpen] = useState(false);

@@ -23,24 +23,6 @@ const Questionnaire = () => {
                             <option value="automated">Mostly automated with tools</option>
                         </select>
                     </div>
-                    {/* <div className="answer">
-                        <label>
-                            <input type="radio" name="coordination" value="all" disabled />
-                            All manual (no tools)
-                        </label>
-                        <label>
-                            <input type="radio" name="coordination" value="mostly" disabled />
-                            Mostly manual with some tools
-                        </label>
-                        <label>
-                            <input type="radio" name="coordination" value="balanced" disabled />
-                            Balanced mix of tools and manual work
-                        </label>
-                        <label>
-                            <input type="radio" name="coordination" value="automated" disabled />
-                            Mostly automated with tools
-                        </label>
-                    </div> */}
                 </div>
 
                 <div className="questionnaire-section">
