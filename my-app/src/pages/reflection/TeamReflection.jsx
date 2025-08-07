@@ -40,9 +40,18 @@ const TeamReflection = () => (
                     allowFullScreen
                 ></iframe>
             </div>
-            <p className="video-description">
-                This is a description of the second video. Provide any context, analysis, or key points you'd like to highlight.
-            </p>
+            <div className="reflection-section">
+                <h3 className="reflection-heading">Team Reflection: Key Insights from Week 2</h3>
+                <ul className="reflection-list">
+                    <li><strong>Centralised Calendar:</strong> Easily view upcoming events in one place.</li>
+                    <li><strong>Clear Opportunities:</strong> Volunteering opportunities are clearly listed.</li>
+                    <li><strong>Human Touch:</strong> Chat and call features maintain personal connection.</li>
+                    <li><strong>Cross-Platform Consistency:</strong> Same features on both website and mobile app.</li>
+                    <li><strong>Notifications:</strong> Reminder system keeps users informed of events.</li>
+                    <li><strong>Accessibility:</strong> Usable across devices and designed with seniors in mind.</li>
+                    <li><strong>Design Simplicity:</strong> Minimalist and intuitive layout for all users.</li>
+                </ul>
+            </div>
         </div>
     </div>
 );
