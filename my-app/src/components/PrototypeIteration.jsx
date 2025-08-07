@@ -50,13 +50,20 @@ const PrototypeIteration = ({ iteration, imageUser, imageAdmin, feedback }) => {
             </section>
 
             <section className="prototype-feedback">
-                <h2>Feedback from Iterative {iteration}</h2>
-                <div>
-                {feedback.map((point, idx) => (
-                    <p key={idx} style={{ marginBottom: '6px' }}>{point}</p>
-                ))}
+                <h2 className="reflection-heading">Feedback from Iterative {iteration}</h2>
+                <div className="reflection-list">
+                    {feedback.map((point, idx) => {
+                        const isSectionHeader = point.startsWith("🛠️") || point.startsWith("🧠") || point.startsWith("💬");
+
+                        return isSectionHeader ? (
+                            <p key={idx} className="reflection-subheading">{point}</p>
+                        ) : (
+                            <li key={idx}>{point}</li>
+                        );
+                    })}
                 </div>
             </section>
+
         </div>
     );
 };

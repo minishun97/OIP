@@ -47,21 +47,19 @@ const Prototyping = () => (
             imageAdmin="/OIP/images/admin_2.jpg"
             feedback={[
                 "🛠️ Changes made based on Iteration 1 findings:",
-                "- Personalized the homescreen:",
-                "   • Added user's name",
-                "   • Added activities recommended to the user",
-                "   • Added level system",
-                "- Allowed account customization:",
-                "   • Added settings page",
-                "- Added more details about activities:",
-                "   • Added activity dates and images",
-                "",
+                "Personalized the homescreen:",
+                "   Added user's name",
+                "   Added activities recommended to the user",
+                "   Added level system",
+                "Allowed account customization:",
+                "   Added settings page",
+                "Added more details about activities:",
+                "   Added activity dates and images",
                 "🧠 User Feedback:",
-                "- User wants a progression bar for the level",
-                "- User wants filter option for activities",
-                "- User wants the calendar to be more detailed",
-                "- Lacking 'human touch'",
-                "",
+                "User wants a progression bar for the level",
+                "User wants filter option for activities",
+                "User wants the calendar to be more detailed",
+                "Lacking 'human touch'",
                 "💬 Reflection:",
                 "Digitization increases efficiency, but risks losing the personal connection volunteers currently value through manual calls."
             ]}
@@ -72,14 +70,14 @@ const Prototyping = () => (
             imageAdmin="/OIP/images/admin_3.jpg"
             feedback={[
                 "Personalization:",
-                "- Added progress bar for level system",
+                "Added progress bar for level system",
                 "Activities:",
-                "- Added filter by categories",
+                "Added filter by categories",
                 "Calendar View:",
-                "- Added additional information like date and location",
+                "Added additional information like date and location",
                 "Chat Page:",
-                "- Messaging",
-                "- Call function"
+                "Messaging",
+                "Call function"
                 ]}
         />
 
@@ -88,7 +86,7 @@ const Prototyping = () => (
             <div className="prototype-image-flex">
                 <div className="perspective-card">
                     <ImageWithModal
-                        src="/OIP/images/balloon.jpg"
+                        src="/OIP/images/webpage_midfi.jpg"
                         alt="Mid-Fi Prototype 1"
                     />
                 </div>

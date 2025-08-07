@@ -1,3 +1,4 @@
+/* General Styling */
 .prototyping-body {
     font-family: 'Poppins', sans-serif;
     background-color: #FCFEFF;
@@ -6,6 +7,7 @@
     padding: 1rem;
 }
 
+/* Section Layout */
 .prototype-section {
     padding: 1rem 2rem;
     margin: 2rem 0;
@@ -48,6 +50,50 @@
     margin-bottom: 1rem;
 }
 
+/* Feedback Section */
+.prototype-feedback {
+    background-color: #f8f9fa;
+    padding: 1.5rem 2rem;
+    margin: 1rem auto 2rem auto;
+    border-radius: 16px;
+    max-width: 720px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    text-align: left;
+}
+
+.prototype-feedback h2,
+.reflection-heading {
+    font-size: 1.4rem;
+    color: #A04E00;
+    margin-bottom: 1rem;
+}
+
+/* Existing list styling */
+.reflection-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* List items */
+.reflection-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Custom subheading styling – no bullet, with spacing */
+.reflection-subheading {
+    font-weight: bold;
+    color: #008B8A;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+    padding-left: 2px;
+}
+
+
+/* Image Modal */
 .modal-image {
     width: 100%;
     max-height: 400px;
@@ -80,25 +126,7 @@
     border-radius: 12px;
 }
 
-.prototype-feedback {
-    padding: 2rem;
-    text-align: center;
-}
-
-.prototype-feedback h2 {
-    font-size: 1.5rem;
-    color: #A04E00;
-    margin-bottom: 1rem;
-}
-
-.prototype-feedback p {
-    font-size: 1rem;
-    color: #333;
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
-}
-
+/* Animation */
 .fade-section {
     transition: opacity 0.8s ease, transform 0.8s ease;
     opacity: 0;
@@ -109,3 +137,4 @@
     opacity: 1;
     transform: translateY(0);
 }
+
