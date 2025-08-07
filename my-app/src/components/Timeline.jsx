@@ -116,6 +116,87 @@ const Timeline = () => (
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
+                iconStyle={{
+                    background: '#a04e00', // warm brown-orange for icon background
+                    color: '#fcfeff', // white-ish text/icon color
+                }}
+                icon={<FaLightbulb />}
+                contentStyle={{
+                    background: '#fcfeff', // light background for readability
+                    border: '2px solid #008b8a', // main teal border
+                    borderRadius: '12px',
+                    boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)',
+                    padding: '20px',
+                }}
+                contentArrowStyle={{ borderRight: '7px solid #008b8a' }} // matches border color
+            >
+                <h3
+                    style={{
+                        color: '#008b8a', // teal heading
+                        fontWeight: 'bold',
+                        marginBottom: '10px',
+                    }}
+                >
+                    Initial Problem Statement{' '}
+                    <span style={{ fontWeight: 'normal'}}>
+                        (23 July 2025)
+                    </span>
+                </h3>
+
+                <p
+                    style={{
+                        color: '#333', // dark text for readability
+                    }}
+                >
+                    Volunteer management within the organization is currently a highly
+                    manual and fragmented process, driven almost entirely by a central
+                    coordinator who acts as the sole point of communication between
+                    volunteers, participants, and events. This coordinator is responsible
+                    for individually reaching out to each volunteer—often through phone
+                    calls, emails, or in-person conversations—to confirm availability,
+                    share event details, arrange training, and track attendance.
+                    <br />
+                    <br />
+                    Without a centralized digital platform, information is dispersed across
+                    multiple tools, spreadsheets, and personal notes, making it difficult
+                    to maintain accurate, up-to-date records. Scheduling changes require
+                    repeated one-to-one follow-ups, consuming a significant amount of
+                    administrative time and creating a risk of miscommunication or missed
+                    opportunities. Training updates and event reminders must also be
+                    delivered individually, leading to inconsistencies in the information
+                    provided.
+                    <br />
+                    <br />
+                    The absence of a unified system further complicates the experience for
+                    volunteers, particularly for those with limited digital access or
+                    varying levels of technical literacy. For some, the current process
+                    feels reactive and disjointed, with limited visibility into upcoming
+                    opportunities, their own participation history, or relevant
+                    organizational updates.
+                    <br />
+                    <br />
+                    This lack of automation and transparency not only reduces operational
+                    efficiency but also places a heavy burden on the management personnel,
+                    whose time could otherwise be dedicated to strategic community
+                    engagement, program improvement, and volunteer support. Ultimately, the
+                    inefficiencies in scheduling, training, and attendance tracking hinder
+                    the organization's ability to scale its volunteer base and maximize its
+                    impact.
+                </p>
+
+                <p>
+                    We also examined the site's functionality, particularly the account
+                    section, to assess how volunteers might register. Through this, we
+                    discovered that signing up as a volunteer requires purchasing a paid
+                    membership—volunteer access is not freely available. Additionally, we
+                    noted that FORK provides a general contact email (
+                    <strong>hello@fork.org.uk</strong>) for public enquiries, offering a
+                    direct channel for follow-up communication or clarification.
+                </p>
+            </VerticalTimelineElement>
+
+
+            <VerticalTimelineElement
                 iconStyle={{ background: '#c31a7fff', color: '#fff' }}
                 icon={<FaLightbulb />}
                 contentStyle={{
@@ -157,6 +238,40 @@ const Timeline = () => (
                     <button className="questionnaire-button">Go to Prototype</button>
                 </NavLink>
             </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+                iconStyle={{ background: '#a04e00', color: '#fff' }}
+                icon={<FaLightbulb />}
+                contentStyle={{
+                    background: '#fcfeff',
+                    border: '2px solid #008b8a',
+                    borderRadius: '12px',
+                    boxShadow: '0 4px 12px rgba(0, 139, 138, 0.2)',
+                    padding: '20px',
+                }}
+                contentArrowStyle={{ borderRight: '7px solid #008b8a' }}
+            >
+                <h3 style={{ color: '#008b8a', fontWeight: 'bold', marginBottom: '10px' }}>
+                    Refined Problem Statement <span style={{ fontWeight: 'normal' }}>(28 July 2025)</span>
+                </h3>
+
+                <p style={{ color: '#333', marginBottom: '12px' }}>
+                    Volunteer management within the organization continues to rely heavily on a central coordinator, who personally bridges the gap between volunteers, participants, and events through one-to-one phone calls, emails, and in-person conversations. While this process fosters a strong sense of human connection, it is also highly manual and fragmented, creating inefficiencies in scheduling, training, and attendance tracking.
+                </p>
+
+                <p style={{ color: '#333', marginBottom: '12px' }}>
+                    Through iterative prototyping and stakeholder feedback, it became clear that efficiency alone is not enough — the human connection must be preserved. Volunteers value the warmth of personalized communication, the recognition of their contributions, and the sense of belonging that comes from feeling genuinely appreciated. These elements are essential for keeping them motivated and engaged over time.
+                </p>
+
+                <p style={{ color: '#333', marginBottom: '12px' }}>
+                    The absence of a centralized platform means that records remain scattered across spreadsheets, notes, and separate tools, requiring repeated follow-ups for even minor scheduling changes. Without visibility into upcoming opportunities, training materials, or their own history of participation, volunteers may feel disconnected from the bigger picture. This is particularly challenging for individuals with limited digital access or varying levels of technical literacy.
+                </p>
+
+                <p style={{ color: '#008b8a', marginBottom: '12px' }}>
+                    The refined problem therefore recognizes the need for a hybrid solution — one that streamlines administrative processes while preserving the personal touch, enabling tailored recognition, and fostering an environment where volunteers feel both supported and celebrated. This balance will not only improve operational efficiency but also strengthen volunteer retention and overall community impact.
+                </p>
+            </VerticalTimelineElement>
+
 
             <VerticalTimelineElement
                 iconStyle={{ background: '#00bcd4', color: '#fff' }}
