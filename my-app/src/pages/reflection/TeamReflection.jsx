@@ -56,7 +56,7 @@ const TeamReflection = () => (
             <div className="final-reflection-section">
                 <h2 className="video-title">Team Final Reflection: Comprehensive Insights</h2>
                 <div className="reflection-section final-reflection">
-                    <h3 className="reflection-heading">Team Final Reflection: An In-Depth Analysis</h3>
+                    <h3 className="reflection-heading">Team Final Reflection: An In-Depth Reflection</h3>
                     <p className="reflection-description">
                         Throughout this project, our team embarked on a human-centered design journey to improve the volunteer management process 
                         for Friends of River Kelvin (FORK). This reflection outlines our key insights, how we considered multiple perspectives, 
