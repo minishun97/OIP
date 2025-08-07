@@ -33,7 +33,7 @@ const PerspectiveCard = ({ title, imgSrc, alt }) => (
     </div>
 );
 
-const PrototypeIteration = ({ iteration, imageUser, imageAdmin }) => {
+const PrototypeIteration = ({ iteration, imageUser, imageAdmin, feedback }) => {
     const [ref, isVisible] = useInView({ threshold: 0.1 });
 
     return (
@@ -51,9 +51,11 @@ const PrototypeIteration = ({ iteration, imageUser, imageAdmin }) => {
 
             <section className="prototype-feedback">
                 <h2>Feedback from Iterative {iteration}</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus, quis dignissim diam.
-                </p>
+                <div>
+                {feedback.map((point, idx) => (
+                    <p key={idx} style={{ marginBottom: '6px' }}>{point}</p>
+                ))}
+                </div>
             </section>
         </div>
     );
