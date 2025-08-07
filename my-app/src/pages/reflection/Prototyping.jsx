@@ -1,29 +1,30 @@
 import PrototypeIteration from '../../components/PrototypeIteration';
 import { useState, useRef } from 'react';
 import '../../components/Prototyping.css';
+import ImageWithModal from '../../components/ImageWithModal';  // Adjust path as needed
 
 const midfiImages1 = [
-    { src: "/OIP/images/website_midfi/webpage_midfi_1.png", alt: "Mid-Fi 1" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_2.png", alt: "Mid-Fi 2" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_3.png", alt: "Mid-Fi 3" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_4.png", alt: "Mid-Fi 4" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_5.png", alt: "Mid-Fi 5" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_6.png", alt: "Mid-Fi 6" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_7.png", alt: "Mid-Fi 7" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_8.png", alt: "Mid-Fi 8" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_9.png", alt: "Mid-Fi 9" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_1.png", alt: "Web Mid-Fi 1" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_2.png", alt: "Web Mid-Fi 2" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_3.png", alt: "Web Mid-Fi 3" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_4.png", alt: "Web Mid-Fi 4" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_5.png", alt: "Web Mid-Fi 5" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_6.png", alt: "Web Mid-Fi 6" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_7.png", alt: "Web Mid-Fi 7" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_8.png", alt: "Web Mid-Fi 8" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_9.png", alt: "Web Mid-Fi 9" },
 ];
 
 const midfiImages2 = [
-    { src: "/OIP/images/website_midfi/webpage_midfi_1.png", alt: "Mid-Fi 1" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_2.png", alt: "Mid-Fi 2" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_3.png", alt: "Mid-Fi 3" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_4.png", alt: "Mid-Fi 4" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_5.png", alt: "Mid-Fi 5" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_6.png", alt: "Mid-Fi 6" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_7.png", alt: "Mid-Fi 7" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_8.png", alt: "Mid-Fi 8" },
-    { src: "/OIP/images/website_midfi/webpage_midfi_9.png", alt: "Mid-Fi 9" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_1.png", alt: "Mobile Mid-Fi 1" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_2.png", alt: "Mobile Mid-Fi 2" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_3.png", alt: "Mobile Mid-Fi 3" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_4.png", alt: "Mobile Mid-Fi 4" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_5.png", alt: "Mobile Mid-Fi 5" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_6.png", alt: "Mobile Mid-Fi 6" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_7.png", alt: "Mobile Mid-Fi 7" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_8.png", alt: "Mobile Mid-Fi 8" },
+    { src: "/OIP/images/mobile_midfi/mobile_midfi_9.png", alt: "Mobile Mid-Fi 9" },
 ];
 
 function MidFiCarousel({ images }) {
@@ -57,11 +58,14 @@ function MidFiCarousel({ images }) {
             >
                 &#8592;
             </button>
-            <img
+
+            {/* Replace img with ImageWithModal */}
+            <ImageWithModal
                 src={images[current].src}
                 alt={images[current].alt}
                 className="carousel-image"
             />
+
             <button
                 className="carousel-arrow right"
                 onClick={next}
@@ -70,6 +74,7 @@ function MidFiCarousel({ images }) {
             >
                 &#8594;
             </button>
+
             <div className="carousel-dots">
                 {images.map((_, i) => (
                     <span
@@ -140,11 +145,11 @@ const Prototyping = () => (
 
 
         <section className="prototype-section">
-            <h2 className="prototype-title">Mid-Fi Prototype</h2>
+            <h2 className="prototype-title">Mid-Fi Webpage Prototype</h2>
             <MidFiCarousel images={midfiImages1} />
         </section>
         <section className="prototype-section">
-            <h2 className="prototype-title">Mid-Fi Prototype 2</h2>
+            <h2 className="prototype-title">Mid-Fi Mobile Prototype</h2>
             <MidFiCarousel images={midfiImages2} />
         </section>
     </div>
