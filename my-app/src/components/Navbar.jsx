@@ -24,6 +24,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="logo">
+                <img src="/OIP/images/FORK.png" alt="Logo Icon" className="logo-icon" />
                 <h1 className="logo-text">
                     <span>Friends of</span>
                     <span>the River Kelvin</span>

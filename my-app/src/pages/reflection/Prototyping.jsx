@@ -1,7 +1,6 @@
 import PrototypeIteration from '../../components/PrototypeIteration';
 import { useState, useRef } from 'react';
 import '../../components/Prototyping.css';
-import ModalPortal from '../../components/ModalPortal';
 
 const midfiImages1 = [
     { src: "/OIP/images/website_midfi/webpage_midfi_1.png", alt: "Mid-Fi 1" },

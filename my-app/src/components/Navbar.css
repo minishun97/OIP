@@ -12,9 +12,16 @@
 
 .logo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 2.5em; /* Match height relative to text size */
+    aspect-ratio: 1 / 1; /* Keep it square */
+    margin-right: 0.5em; /* Space between image and text */
+    object-fit: contain; /* Avoid distortion */
 }
 
 .logo-text {
