@@ -1,30 +1,88 @@
 import PrototypeIteration from '../../components/PrototypeIteration';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import '../../components/Prototyping.css';
 import ModalPortal from '../../components/ModalPortal';
 
-const ImageWithModal = ({ src, alt }) => {
-    const [isOpen, setIsOpen] = useState(false);
+const midfiImages1 = [
+    { src: "/OIP/images/website_midfi/webpage_midfi_1.png", alt: "Mid-Fi 1" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_2.png", alt: "Mid-Fi 2" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_3.png", alt: "Mid-Fi 3" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_4.png", alt: "Mid-Fi 4" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_5.png", alt: "Mid-Fi 5" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_6.png", alt: "Mid-Fi 6" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_7.png", alt: "Mid-Fi 7" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_8.png", alt: "Mid-Fi 8" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_9.png", alt: "Mid-Fi 9" },
+];
+
+const midfiImages2 = [
+    { src: "/OIP/images/website_midfi/webpage_midfi_1.png", alt: "Mid-Fi 1" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_2.png", alt: "Mid-Fi 2" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_3.png", alt: "Mid-Fi 3" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_4.png", alt: "Mid-Fi 4" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_5.png", alt: "Mid-Fi 5" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_6.png", alt: "Mid-Fi 6" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_7.png", alt: "Mid-Fi 7" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_8.png", alt: "Mid-Fi 8" },
+    { src: "/OIP/images/website_midfi/webpage_midfi_9.png", alt: "Mid-Fi 9" },
+];
+
+function MidFiCarousel({ images }) {
+    const [current, setCurrent] = useState(0);
+    const touchStartX = useRef(null);
+
+    const goTo = idx => setCurrent((idx + images.length) % images.length);
+    const prev = () => goTo(current - 1);
+    const next = () => goTo(current + 1);
+
+    const onTouchStart = e => { touchStartX.current = e.touches[0].clientX; };
+    const onTouchEnd = e => {
+        if (touchStartX.current === null) return;
+        const diff = e.changedTouches[0].clientX - touchStartX.current;
+        if (diff > 40) prev();
+        else if (diff < -40) next();
+        touchStartX.current = null;
+    };
 
     return (
-        <>
+        <div
+            className="midfi-carousel"
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
+        >
+            <button
+                className="carousel-arrow left"
+                onClick={prev}
+                aria-label="Previous"
+                tabIndex={0}
+            >
+                &#8592;
+            </button>
             <img
-                src={src}
-                alt={alt}
-                className="modal-image"
-                onClick={() => setIsOpen(true)}
+                src={images[current].src}
+                alt={images[current].alt}
+                className="carousel-image"
             />
-
-            {isOpen && (
-                <ModalPortal>
-                    <div className="image-modal-overlay" onClick={() => setIsOpen(false)}>
-                        <img src={src} alt={alt} className="image-modal-content" />
-                    </div>
-                </ModalPortal>
-            )}
-        </>
+            <button
+                className="carousel-arrow right"
+                onClick={next}
+                aria-label="Next"
+                tabIndex={0}
+            >
+                &#8594;
+            </button>
+            <div className="carousel-dots">
+                {images.map((_, i) => (
+                    <span
+                        key={i}
+                        className={`carousel-dot${i === current ? " active" : ""}`}
+                        onClick={() => goTo(i)}
+                    />
+                ))}
+            </div>
+        </div>
     );
-};
+}
 
 const Prototyping = () => (
     <div className="prototyping-body">
@@ -81,22 +139,14 @@ const Prototyping = () => (
                 ]}
         />
 
+
         <section className="prototype-section">
             <h2 className="prototype-title">Mid-Fi Prototype</h2>
-            <div className="prototype-image-flex">
-                <div className="perspective-card">
-                    <ImageWithModal
-                        src="/OIP/images/webpage_midfi.jpg"
-                        alt="Mid-Fi Prototype 1"
-                    />
-                </div>
-                <div className="perspective-card">
-                    <ImageWithModal
-                        src="/OIP/images/balloon.jpg"
-                        alt="Mid-Fi Prototype 2"
-                    />
-                </div>
-            </div>
+            <MidFiCarousel images={midfiImages1} />
+        </section>
+        <section className="prototype-section">
+            <h2 className="prototype-title">Mid-Fi Prototype 2</h2>
+            <MidFiCarousel images={midfiImages2} />
         </section>
     </div>
 );
