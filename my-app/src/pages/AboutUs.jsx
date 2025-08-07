@@ -7,7 +7,7 @@ const AboutUs = () => {
             name: "Lew Jie Shun",
             description: "???",
             image: "???",
-            linkedin: "https://www.linkedin.com/in/???"
+            linkedin: "https://www.linkedin.com/in/lew-jie-shun/"
         },
         {
             name: "Kua Dong Han",
