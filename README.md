@@ -1,5 +1,3 @@
-# OIP
+# OIP Team 22
 
-## Install Pre-requisite packages
-npm install -D tailwindcss postcss autoprefixer
-
+The following folder 'my-app' is the project folder that we used to develop our webpage.
