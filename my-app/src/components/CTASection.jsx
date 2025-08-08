@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 import './base.css';
 
 const CTASection = () => (
@@ -12,9 +13,9 @@ const CTASection = () => (
         <p className="cta-text">
             Have a question or want to collaborate? We're always open to new ideas and partnerships.
         </p>
-        <a href="#/about-us" className="cta-button">
+        <NavLink to="/about-us" className="cta-button">
             Contact Us
-        </a>
+        </NavLink>
     </motion.section>
 );
 
