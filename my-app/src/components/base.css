@@ -336,7 +336,8 @@ body {
 .insight-card-inner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 250px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
@@ -348,7 +349,9 @@ body {
 .insight-card-front,
 .insight-card-back {
     position: absolute;
-    height: 250px;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
     backface-visibility: hidden;
     padding: 20px;
     border-radius: 10px;
@@ -465,6 +468,14 @@ body {
     .insight-card {
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    .insight-card-front,
+    .insight-card-back {
+        min-height: unset; /* let it shrink or grow naturally */
+        height: auto;
+        padding: 15px;
+        display: block; /* stack content naturally */
     }
 
     .custom-footer {

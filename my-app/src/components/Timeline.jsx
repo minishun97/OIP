@@ -272,7 +272,6 @@ const Timeline = () => (
                 </p>
             </VerticalTimelineElement>
 
-
             <VerticalTimelineElement
                 iconStyle={{ background: '#00bcd4', color: '#fff' }}
                 icon={<FaUserFriends />}
@@ -296,7 +295,6 @@ const Timeline = () => (
                 </p>
 
                 <div className="feedback-cards-container">
-
                     <div className="insight-card" style={{ minHeight: '220px' }}>
                         <div className="insight-card-inner">
                             <div className="insight-card-front">
@@ -340,7 +338,6 @@ const Timeline = () => (
                             </div>
                         </div>
                     </div>
-
                 </div>
             </VerticalTimelineElement>
 
