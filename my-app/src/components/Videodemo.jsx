@@ -1,30 +1,34 @@
-import React from "react";
+import React from 'react';
 
 const Videodemo = () => {
   return (
-    <div style={{ textAlign: "center" }}>
-      <h2>Web demo</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/xd2L5OI7PHs"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+    <section style={{ textAlign: 'center', padding: '2rem' }}>
+      <h2>Project Demo Videos</h2>
 
-      <h2 style={{ marginTop: "40px" }}>Mobile app demo</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/hBzCDKjtbQo"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+        {/* First video */}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/xd2L5OI7PHs"
+          title="YouTube video 1"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
+        {/* Second video */}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hBzCDKjtbQo"
+          title="YouTube video 2"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </section>
   );
 };
 
