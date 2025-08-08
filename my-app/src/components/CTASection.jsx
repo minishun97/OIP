@@ -12,7 +12,7 @@ const CTASection = () => (
         <p className="cta-text">
             Have a question or want to collaborate? We're always open to new ideas and partnerships.
         </p>
-        <a href="about-us" className="cta-button">
+        <a href="#/about-us" className="cta-button">
             Contact Us
         </a>
     </motion.section>

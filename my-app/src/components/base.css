@@ -470,12 +470,22 @@ body {
         margin-bottom: 15px;
     }
 
+    .insight-card-front {
+        height: 250px;
+    }
+
+    .insight-card-back {
+        height: auto;
+    }
+
     .insight-card-front,
     .insight-card-back {
-        min-height: unset; /* let it shrink or grow naturally */
-        height: auto;
+        min-height: 180px; /* estimated sweet spot for mobile view */
         padding: 15px;
-        display: block; /* stack content naturally */
+        display: flex; /* keeps it centered vertically */
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .custom-footer {
